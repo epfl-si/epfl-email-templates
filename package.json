@@ -7,7 +7,8 @@
   "license": "",
   "repository": "https://github.com/epfl-si/epfl-email-templates",
   "scripts": {
-    "test": "grunt test"
+    "test": "grunt test",
+    "serve": "grunt serve"
   },
   "devDependencies": {
     "eslint-config-standard": "^16.0.2",
@@ -15,6 +16,8 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "grunt": "^1.4.0",
+    "grunt-contrib-connect": "^3.0.0",
+    "grunt-contrib-watch": "^1.1.0",
     "grunt-eslint": "^23.0.0",
     "load-grunt-config": "^3.0.1"
   },
