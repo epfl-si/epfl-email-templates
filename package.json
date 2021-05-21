@@ -1,0 +1,12 @@
+{
+  "name": "epfl-email-templates",
+  "version": "0.0.1",
+  "private": true,
+  "description": "",
+  "author": "William Belle <william.belle@gmail.com>",
+  "license": "",
+  "repository": "https://github.com/epfl-si/epfl-email-templates",
+  "scripts": { },
+  "devDependencies": { },
+  "dependencies": { }
+}
