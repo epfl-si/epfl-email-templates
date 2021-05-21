@@ -1,0 +1,1 @@
+# epfl-email-templates
