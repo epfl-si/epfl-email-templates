@@ -1,0 +1,8 @@
+{
+  "extends": "standard",
+  "rules": {
+    "max-len": [2, 80],
+    "semi": [2, "always"],
+    "strict": [2, "global"]
+  }
+}
