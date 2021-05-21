@@ -3,6 +3,10 @@
 test:
   - 'eslint'
 
+build:
+  - 'compile-handlebars'
+
 serve:
+  - 'build'
   - 'connect:build'
   - 'watch'

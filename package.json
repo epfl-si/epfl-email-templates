@@ -6,7 +6,11 @@
   "author": "William Belle <william.belle@gmail.com>",
   "license": "",
   "repository": "https://github.com/epfl-si/epfl-email-templates",
+  "engines": {
+    "node": ">=10"
+  },
   "scripts": {
+    "build": "grunt build",
     "test": "grunt test",
     "serve": "grunt serve"
   },
@@ -16,6 +20,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "grunt": "^1.4.0",
+    "grunt-compile-handlebars": "^2.0.2",
     "grunt-contrib-connect": "^3.0.0",
     "grunt-contrib-watch": "^1.1.0",
     "grunt-eslint": "^23.0.0",
