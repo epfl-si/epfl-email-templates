@@ -1,0 +1,52 @@
+{{#> layouts/base title="Email template – News - EPFL" }}
+
+  {{#*inline "extra-style-block"}}
+    img {
+      height: auto;
+      max-width: 100%;
+    }
+  {{/inline}}
+
+  {{#*inline "content-block"}}
+
+    {{> includes/online-version }}
+    {{> includes/header app_title="News" }}
+    {{> includes/spacer }}
+
+    <tr>
+      <td>
+        <table style="border-collapse: collapse; max-width: 640px; width: 100%;" width="100%">
+          <tr>
+            <td style="border: solid #e6e6e6; border-width: 1px 1px 0 1px; padding: 20px 20px 20px 20px;" valign="top" width="100%" >
+              <a href="https://actu.epfl.ch/news/shoots-for-the-moon/">
+                <img height="360" src="https://actu.epfl.ch/image/92771/640x360.jpg" style="height: auto; max-width: 100%;" width="640"></a>
+            </td>
+          </tr>
+          <tr>
+            <td style="border: solid #e6e6e6; border-width: 0 1px 1px 1px; padding: 0 20px 20px 20px;" valign="top" width="100%">
+              <h3 style="font-size: 18px; font-weight: bold; line-height: 24px; margin: 0 0 10px 0;">
+                <a href="https://actu.epfl.ch/news/shoots-for-the-moon/" style="color: #212121; text-decoration: underline; text-decoration-color: #ff0000;">
+                  Shoot(s) for the Moon!
+                </a>
+              </h3>
+              <p style="color: #707070; font-size: 15px; line-height: 20px; margin: 0">
+                <span style="color: #212121;">17.06.20</span> —  Using robotics to grow and harvest plants without human intervention?
+                That’s the aim of GrowBotHub, an EPFL project under the auspices of the IGLUNA 2020 initiative, in which teams of
+                students work together on technologies that can be used to design a space habitat. Final projects will be presented online in July.
+              </p>
+              <p style="color: #707070; font-size: 14px; line-height: 19px; margin: 20px 0 0">
+                Author: Sarah Perrin | Source: EPFL
+              </p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    {{> includes/spacer }}
+    {{> includes/copyright }}
+    {{> includes/unsubscribe }}
+
+  {{/inline}}
+
+{{/layouts/base}}
