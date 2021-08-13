@@ -1,0 +1,51 @@
+{{#> layouts/base title="Email template – Memento Subscription - EPFL" }}
+
+  {{#*inline "content-block"}}
+
+    {{> includes/header app_title="Memento" }}
+    {{> includes/spacer }}
+
+    <tr>
+      <td>
+        <table style="border-collapse: collapse; max-width: 640px; width: 100%;" width="100%">
+          <tr>
+            <td>
+              <h2 style="font-size: 24px; line-height: 28px; margin: 0;">
+                Confirm your subscription
+              </h2>
+            </td>
+          </tr>
+        </table>
+
+        <table style="border-collapse: collapse; max-width: 640px; width: 100%;" width="100%">
+          <tr>
+            <td>
+              <p>
+                Confirm your subscription to the CDM memento using
+                the button under.
+              </p>
+              <p style="margin: 20px 0 30px; font-size: 15px; line-height: 20px;">
+                <a
+                  class="btn"
+                  href="https://memento.epfl.ch"
+                  style="background: #ff0000; border-radius: 2px; color: #ffffff; display: inline-block; padding: 8px 20px; text-decoration: none;">
+                  Confirm your subscription
+                </a>
+              </p>
+              <p>
+                If you received this email by mistake, simply delete it.
+                You won't be subscribed if you don't click the confirmation
+                link above.
+              </p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    {{> includes/spacer }}
+    {{> includes/copyright }}
+
+  {{/inline}}
+
+{{/layouts/base}}
