@@ -14,7 +14,7 @@
     "test": "grunt test",
     "serve": "grunt serve",
     "watch:docs": "mkdocs serve --dev-addr=0.0.0.0:8500",
-    "watch": "run-p serve watch:docs"
+    "watch": "run-p watch:docs serve"
   },
   "devDependencies": {
     "dotenv": "^10.0.0",
