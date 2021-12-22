@@ -3,20 +3,21 @@
 version: "2"
 services:
   serve:
-    image: node:14-alpine
-    container_name: serve
+    image: nikolaik/python-nodejs:python3.8-nodejs16-slim
+    container_name: epfl-email-templates-serve
     working_dir: /app
-    command: sh -c "npm i && npm run serve"
+    command: sh -c "npm i && pip install mkdocs-material==6.2.8 && npm run watch"
     volumes:
       - .:/app
     ports:
       - "8200:8200"
+      - "8500:8500"
       - "35729:35729"
 
   build:
-    image: node:14-alpine
-    container_name: build
+    image: nikolaik/python-nodejs:python3.8-nodejs16-slim
+    container_name: epfl-email-templates-build
     working_dir: /app
-    command: sh -c "npm i && npm run build"
+    command: sh -c "npm i && pip install mkdocs-material==6.2.8 && npm run build && mkdocs build"
     volumes:
       - .:/app
