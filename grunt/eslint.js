@@ -8,6 +8,7 @@ module.exports = {
   },
   target: [
     '**/*.js',
-    '!node_modules/**/*.js'
+    '!node_modules/**/*.js',
+    '!site/**/*.js'
   ]
 };
