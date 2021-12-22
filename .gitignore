@@ -106,3 +106,4 @@ dist
 # Build folder
 www
 site
+docs/examples

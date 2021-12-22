@@ -8,7 +8,7 @@ module.exports = {
       expand: true,
       cwd: 'www/pages/',
       src: ['**'],
-      dest: 'site/examples',
+      dest: 'docs/examples',
       nonull: true
     }]
   }
