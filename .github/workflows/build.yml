@@ -17,6 +17,16 @@ jobs:
         with:
           node-version: '16.x'
 
+      - name: Setup Python 3.8
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+
+      - name: Install and build documentation
+        run: |
+          pip install mkdocs-material==6.2.8
+          mkdocs build
+
       - name: Install, test and build
         run: |
           npm i
