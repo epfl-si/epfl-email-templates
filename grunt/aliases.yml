@@ -5,6 +5,7 @@ test:
 
 build:
   - 'compile-handlebars'
+  - 'copy'
 
 serve:
   - 'build'
