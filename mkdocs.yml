@@ -1,0 +1,45 @@
+# (c) ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, Switzerland, 2021.
+
+site_name: EPFL Email Templates
+
+theme:
+  name: material
+  palette:
+    scheme: epfl
+  logo: https://web2018.epfl.ch/5.2.0/icons/epfl-logo.svg
+  favicon: https://web2018.epfl.ch/5.2.0/icons/favicon-32.png
+
+  features:
+    - navigation.tabs
+
+copyright: Copyright &copy; 2021 EPFL, all rights reserved.
+
+extra:
+  social:
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/epflcampus
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/epfl
+    - icon: fontawesome/brands/instagram
+      link: https://instagram.com/epflcampus
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/user/epflnews
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/school/epfl/
+    - icon: fontawesome/brands/github
+      link: https://github.com/epfl-si/
+
+extra_css:
+  - css/epfl-scheme.min.css
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
+docs_dir: docs
+
+nav:
+  - Home: index.md
