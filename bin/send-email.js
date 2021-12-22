@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /*
- * (c) ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, Switzerland, VPSI, 2021.
+ * (c) ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, Switzerland, 2021.
  */
 
 require('dotenv').config();
