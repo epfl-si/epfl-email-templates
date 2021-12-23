@@ -1,11 +1,14 @@
 # (c) ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, Switzerland, 2021.
 
-name: Build
+name: Deploy
 
-on: [push, pull_request]
+on:
+  push:
+    tags:
+       - '*'
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -22,13 +25,18 @@ jobs:
         with:
           python-version: 3.8
 
-      - name: Install, test and build
+      - name: Install and build templates
         run: |
           npm i
-          npm t
           npm run build
 
       - name: Install and build documentation
         run: |
           pip install mkdocs-material==6.2.8
           mkdocs build
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
