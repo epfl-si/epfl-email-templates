@@ -25,7 +25,7 @@ Run
 docker-compose up serve
 ```
 
-This will start a server on http://localhost:8200
+This will start a server on http://localhost:8500
 
 Send
 ----
